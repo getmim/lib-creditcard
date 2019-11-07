@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'lib-creditcard',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/lib-creditcard.git',
     '__license' => 'MIT',
     '__author' => [
@@ -44,5 +44,8 @@ return [
             '24.0' => 'form.error.creditcard.invalid_number',
             '24.1' => 'form.error.creditcard.is_not_as_of_rule_provider'
         ]
+    ],
+    'libCreditcard' => [
+        'logos' => []
     ]
 ];

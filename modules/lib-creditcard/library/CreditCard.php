@@ -188,7 +188,7 @@ class CreditCard
             'provider' => [
                 'id'    => $provider[0],
                 'label' => $provider[1],
-                'logo'  => 'N/A'
+                'logo'  => \Mim::$app->config->libCreditcard->logos->{$provider[0]} ?? NULL
             ],
             'number' => $number
         ];

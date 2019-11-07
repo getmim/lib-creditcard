@@ -10,6 +10,24 @@ Jalankan perintah di bawah di folder aplikasi:
 mim app install lib-creditcard
 ```
 
+## Konfigurasi
+
+Module ini tidak menyimpan informasi logo/icon kartu kredit. Tambahkan url ke icon/logo
+kartu kredit di konfigurasi aplikasi seperti di bawah:
+
+```php
+return [
+    'libCreditcard' => [
+        'logos' => [
+            'PROVIDER_NAME' => [
+                'logo' => '...',
+                'icon' => '...'
+            ]
+        ]
+    ]
+];
+```
+
 ## Validator
 
 Module ini menambah satu rule validator, yaitu:
